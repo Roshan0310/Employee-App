@@ -1,7 +1,7 @@
 const { default: mongoose } = require("mongoose");
 let Mongoose = require("mongoose");
 
-const emplyeeSchema = Mongoose.Schema(
+const employeeSchema = Mongoose.Schema(
     {
         name : String,
         position : String,
@@ -10,6 +10,6 @@ const emplyeeSchema = Mongoose.Schema(
     }
 )
 
-let employeeModel = Mongoose.model("emplyeeDetials",emplyeeSchema);
+let employeeModel = Mongoose.model("emplyeeDetials",employeeSchema);
 
 module.exports = {employeeModel}
